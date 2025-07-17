@@ -1,0 +1,247 @@
+.common-button {
+  background-color: $black-color;
+  color: $white-color;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 140px;
+}
+header {
+  width: 100%;
+  background-color: #000000d6;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+nav {
+  border-radius: 5px;
+}
+.navbar {
+  padding: 0;
+  .navbar-brand {
+    img {
+      width: 65%;
+    }
+  }
+}
+.nav-link {
+  padding: 1.7rem 0.5rem;
+  color: $white-color;
+  transition: all 0.5s ease;
+  &:hover {
+    color: $primary-color;
+    transition: all 0.5s ease;
+  }
+}
+.desktop-tabs {
+  width: 100%;
+  float: left;
+  .tab-content {
+    img {
+      width: 100%;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      display: block;
+      text-align: center;
+      background: #fff;
+      padding: 6px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      line-height: 18px;
+    }
+  }
+  .nav-link {
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    color: $white-color;
+    outline: none;
+    text-align: left;
+  }
+  .nav-link.active {
+    background-color: #fff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-radius: 5px;
+    border: none;
+  }
+  .nav-item {
+    margin-bottom: 5px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+}
+.header-contact-form {
+  width: 31%;
+  float: right;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
+.mega-menu {
+  position: absolute;
+  left: 0;
+  top: 101%;
+  width: 100%;
+  background: #00000099;
+  padding: 20px;
+  display: none;
+  z-index: 11111111;
+  border-radius: 5px;
+}
+.nav-item {
+  &:hover {
+    .mega-menu {
+      display: block;
+    }
+  }
+}
+.nav-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+    }
+  }
+  img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.5s ease;
+  }
+}
+.tab-pane {
+  a {
+    display: block;
+    margin-bottom: 8px;
+    color: $gray-color;
+    text-decoration: none;
+  }
+}
+@media (min-width: 992px) {
+  .nav-item.dropdown {
+    &:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+  .navbar-expand-lg {
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: end;
+    }
+  }
+  .mobile-accordion {
+    display: none;
+  }
+  .desktop-tabs {
+    .tab-wrapper {
+      display: flex;
+      gap: 45px;
+    }
+    .nav-tabs {
+      flex-direction: column;
+      border-bottom: none;
+    }
+    .tab-content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      background-color: #0000005e;
+      border-radius: 5px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .mega-menu {
+    position: static;
+    width: 100%;
+    display: none;
+  }
+  .mega-menu.show {
+    display: block;
+  }
+  .desktop-tabs {
+    display: none;
+  }
+  .mobile-accordion {
+    .btn {
+      text-align: left;
+      width: 100%;
+      margin-bottom: 10px;
+      background-color: $background-color_2;
+      border: none;
+      outline: none;
+      color: $black-color;
+    }
+  }
+  #accordionMobile {
+    li {
+      a {
+        color: $black-color;
+        text-decoration: none;
+      }
+      &::marker {
+        display: none;
+      }
+    }
+  }
+}
+
+.login__strip {
+  width: 100%;
+  background-color: $primary-color;
+  text-align: right;
+  padding: 7px 0;
+  ul.header__contact__info {
+    text-align: left;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 15px;
+      &:nth-last-child(1) {
+        margin-left: 0;
+      }
+      a {
+        text-decoration: none;
+        color: $white-color;
+        i {
+          margin-right: 4px;
+        }
+      }
+      span {
+        color: $white-color;
+        margin: 0 10px;
+      }
+    }
+  }
+}

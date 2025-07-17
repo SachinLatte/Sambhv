@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+@import "reset";
+@import "variables";
+@import "navigations";
+@import "homepage";
+
+.custom-container {
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+}
