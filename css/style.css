@@ -38,7 +38,7 @@ li {
 
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8392156863);
+  background-color: rgba(0, 0, 0, 0.7490196078);
   height: 80px;
   display: flex;
   align-items: center;
@@ -63,6 +63,9 @@ nav {
 .nav-link:hover {
   color: #f3951a;
   transition: all 0.5s ease;
+}
+.nav-link:focus-visible {
+  box-shadow: none;
 }
 
 .desktop-tabs {
@@ -135,7 +138,7 @@ nav {
   left: 0;
   top: 101%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: #000000;
   padding: 20px;
   display: none;
   z-index: 11111111;
@@ -168,9 +171,22 @@ nav {
   text-decoration: none;
 }
 
+.nav-item.dropdown .dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20%);
+  transition: all 0.5s;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+
 @media (min-width: 992px) {
-  .nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+  .desk-none {
+    display: none;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -226,20 +242,33 @@ nav {
 }
 .login__strip {
   width: 100%;
-  background-color: #f3951a;
+  background-color: rgba(0, 0, 0, 0.7490196078);
   text-align: right;
-  padding: 7px 0;
+  padding: 15px 0 5px 0;
 }
 .login__strip ul.header__contact__info {
-  text-align: left;
-  width: 50%;
+  text-align: right;
+  width: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: end;
+  gap: 28px;
 }
 .login__strip ul.header__contact__info li {
   display: inline-block;
-  margin-left: 10px;
   font-size: 15px;
+  position: relative;
+}
+.login__strip ul.header__contact__info li::after {
+  content: "|";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  color: #f3951a;
+}
+.login__strip ul.header__contact__info li:nth-last-child(1):after {
+  display: none;
 }
 .login__strip ul.header__contact__info li:nth-last-child(1) {
   margin-left: 0;

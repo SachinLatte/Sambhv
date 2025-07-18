@@ -1,18 +1,17 @@
 <div class="login__strip">
     <div class="custom-container">
         <ul class="header__contact__info">
-            <li><a href="tail:1800 208 9990"><i class="ri-phone-fill"></i>1800 208 9990</a><span>|</span></li>
-            <li><a href="mailto:sales@sambhv.com"><i class="ri-mail-line"></i>sales@sambhv.com</a></li>
+            <li><a href="javascript:void(0)">Resources</a></li>
+            <li><a href="javascript:void(0)">CSR</a></li>
+            <li><a href="javascript:void(0)">Careers</a></li>
+            <li><a href="javascript:void(0)">Store Locator</a></li>
         </ul>
-        <!-- <ul>
-            <li><a href="javascript:void(0)"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Order Online</a></li>
-        </ul> -->
     </div>
 </div>
 <header>
        <div class="custom-container">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid px-4">
+            <div class="container-fluid g-0">
                 <a class="navbar-brand" href="javascript:void(0)"><img src="img/logo.webp" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -23,15 +22,14 @@
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="aboutMenu" role="button">
                                 About Us
                             </a>
-
                             <ul class="dropdown-menu" aria-labelledby="aboutMenu">
                                 <li><a class="dropdown-item" href="javascript:void(0)">Our Organisation</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0)">Our Journey</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0)">Awards & Recognition</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0)">Manufacturing</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Subsdiaries and other
-                                        entities</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Subsdiaries & Other Entities</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0)">Leadership</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Brand Values</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -418,7 +416,6 @@
                                 <li><a class="dropdown-item" href="javascript:void(0)">Fabricators</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="javascirpt:void(0)">Brand Values</a></li>
                         <li class="nav-item dropdown position-relative">
                             <a class="nav-link dropdown-toggle" href="javascirpt:void(0)" id="aboutMenu" role="button">
                                 Investors
@@ -427,8 +424,8 @@
                                 <li><a class="dropdown-item" href="javascirpt:void(0)">Financial Performance</a></li>
                                 <li><a class="dropdown-item" href="javascirpt:void(0)">Investor Information</a></li>
                                 <li><a class="dropdown-item" href="javascirpt:void(0)">Prospectus</a></li>
-                                <li><a class="dropdown-item" href="javascirpt:void(0)">Corporate Governance & Regulatory
-                                        Information</a></li>
+                                <li><a class="dropdown-item" href="javascirpt:void(0)">Corporate Governance</a></li>
+                                <li><a class="dropdown-item" href="javascirpt:void(0)">Regulatory Information</a></li>
                                 <li><a class="dropdown-item" href="javascirpt:void(0)">Contact Us</a></li>
                             </ul>
                         </li>
@@ -441,19 +438,33 @@
                                 <li><a class="dropdown-item" href="javascript:void(0)">Media Coverage</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0)">Testimonials</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0)">Product Brochure</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Corporate Events and
-                                        Exhibitions</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Corporate Events & Exhibitions</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0)">CSR</a></li>
-                        <li class="nav-item dropdown position-relative">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="aboutMenu" role="button">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" role="button">
                                 Get In Touch
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="aboutMenu">
-                                <li><a class="dropdown-item" href="javascript:void(0)">Contact Us</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Store Locator</a></li>
-                            </ul>
+                        </li>
+                        <li class="nav-item desk-none">
+                            <a class="nav-link" href="javascript:void(0)" role="button">
+                               Resources
+                            </a>
+                        </li>
+                        <li class="nav-item desk-none">
+                            <a class="nav-link" href="javascript:void(0)" role="button">
+                                CSR
+                            </a>
+                        </li>
+                        <li class="nav-item desk-none">
+                            <a class="nav-link" href="javascript:void(0)" role="button">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="nav-item desk-none">
+                            <a class="nav-link" href="javascript:void(0)" role="button">
+                                Store Locator
+                            </a>
                         </li>
                     </ul>
                 </div>

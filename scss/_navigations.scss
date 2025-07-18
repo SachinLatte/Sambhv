@@ -11,7 +11,7 @@
 }
 header {
   width: 100%;
-  background-color: #000000d6;
+  background-color: #000000bf;
   height: 80px;
   display: flex;
   align-items: center;
@@ -34,6 +34,9 @@ nav {
   &:hover {
     color: $primary-color;
     transition: all 0.5s ease;
+  }
+  &:focus-visible {
+    box-shadow: none;
   }
 }
 .desktop-tabs {
@@ -106,7 +109,7 @@ nav {
   left: 0;
   top: 101%;
   width: 100%;
-  background: #00000099;
+  background: $black-color;
   padding: 20px;
   display: none;
   z-index: 11111111;
@@ -143,14 +146,25 @@ nav {
     text-decoration: none;
   }
 }
-@media (min-width: 992px) {
-  .nav-item.dropdown {
-    &:hover {
-      .dropdown-menu {
-        display: block;
-      }
-    }
+.nav-item.dropdown {
+  .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: all 0.5s;
   }
+  &:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+}
+@media (min-width: 992px) {
+  .desk-none {
+    display: none;
+  }
+
   .navbar-expand-lg {
     .navbar-nav {
       flex-direction: row;
@@ -216,18 +230,31 @@ nav {
 
 .login__strip {
   width: 100%;
-  background-color: $primary-color;
+  background-color: #000000bf;
   text-align: right;
-  padding: 7px 0;
+  padding: 15px 0 5px 0;
   ul.header__contact__info {
-    text-align: left;
-    width: 50%;
+    text-align: right;
+    width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: end;
+    gap: 28px;
     li {
       display: inline-block;
-      margin-left: 10px;
       font-size: 15px;
+      position: relative;
+      &::after {
+        content: "|";
+        position: absolute;
+        right: -15px;
+        top: 0;
+        color: $primary-color;
+      }
+      &:nth-last-child(1):after {
+        display: none;
+      }
       &:nth-last-child(1) {
         margin-left: 0;
       }
