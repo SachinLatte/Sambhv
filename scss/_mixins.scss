@@ -1,0 +1,72 @@
+@mixin common-padding {
+  padding: 5% 0;
+  width: 100%;
+  @include breakpoints(1536px) {
+    padding: 4% 0;
+  }
+  @include breakpoints(1280px) {
+    padding: 4% 0;
+  }
+}
+
+@mixin common-heading {
+  font-family: $heading-font;
+  font-size: 45px;
+  text-transform: capitalize;
+  color: $primary-color;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  @include breakpoints(1600px) {
+    font-size: 40px;
+  }
+
+  @include breakpoints(1470px) {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  @include breakpoints(1366px) {
+    font-size: 38px;
+  }
+
+  @include breakpoints(1280px) {
+    font-size: 35px;
+  }
+
+  @include breakpoints(1024px) {
+    font-size: 29px;
+    line-height: 50px;
+  }
+  @include breakpoints(500px) {
+    letter-spacing: 0;
+  }
+}
+
+@mixin common-para {
+  font-family: $paragraph-font;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black-color;
+
+  @include breakpoints(1366px) {
+    font-size: 17px;
+  }
+
+  @include breakpoints(500px) {
+    text-align: justify;
+    font-size: 18px;
+  }
+}
+
+@mixin common-button {
+  background-color: $black-color;
+  color: $white-color;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 140px;
+}

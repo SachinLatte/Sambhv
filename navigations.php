@@ -33,7 +33,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void" id="productsToggle">Products</a>
+                            <a class="nav-link dropdown-toggle position-relative" href="javascript:void" id="productsToggle">Products</a>
                             <div class="mega-menu" id="megaMenu">
                                 <!-- Desktop: Vertical Tabs -->
                                 <div class="desktop-tabs">
@@ -106,7 +106,7 @@
                                                     <div class="col-md-4">
                                                         <a href="javascript:void(0)">
                                                             <div class="nav-img">
-                                                                <img src="nav-img.webp" alt="Hot Roll Coiled">
+                                                                <img src="nav-img1.webp" alt="Hot Roll Coiled">
                                                             </div>
                                                             <span>Hot-Rolled Coil</span>
                                                         </a>
@@ -114,7 +114,7 @@
                                                     <div class="col-md-4">
                                                         <a href="javascript:void(0)">
                                                             <div class="nav-img">
-                                                                <img src="nav-img.webp" alt="Hot Roll Coiled">
+                                                                <img src="nav-img1.webp" alt="Hot Roll Coiled">
                                                             </div>
                                                             <span>HRAP Coil</span>
                                                         </a>
@@ -122,7 +122,7 @@
                                                     <div class="col-md-4">
                                                         <a href="javascript:void(0)">
                                                             <div class="nav-img">
-                                                                <img src="nav-img.webp" alt="Hot Roll Coiled">
+                                                                <img src="nav-img1.webp" alt="Hot Roll Coiled">
                                                             </div>
                                                             <span>Cold Rolled (CR) Coil</span>
                                                         </a>
@@ -307,9 +307,11 @@
                                             </div>
                                         </div>
                                         <div class="header-contact-form">
-                                            <h2>Ready to Change the World with Us?</h2>
-                                            <p>If you answered yes, please take a few minutes to Apply for a Career at Sambhv, don't forget to tell us why you believe you are a good fit for our organisation.</p>
-                                            <a href="javascirpt:void(0)" class="common-button">Apply Now</a>
+                                            <div class="header-form-info">'
+                                                <h2>Ready to Change the World with Us?</h2>
+                                                <p>If you answered yes, please take a few minutes to Apply for a Career at Sambhv, don't forget to tell us why you believe you are a good fit for our organisation.</p>
+                                                <a href="javascirpt:void(0)" class="apply-btn">Apply Now</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

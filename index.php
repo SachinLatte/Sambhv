@@ -14,5 +14,6 @@
   </div>
 </section> 
 <!--hero banner section-->
+<?php include "footer.php" ?>
 <?php include "tail.php" ?>
   

@@ -62,3 +62,13 @@
                 });
             }
         });
+
+// Smoothscroll Script
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+//Aos Animation
+AOS.init({
+  once: true
+});
