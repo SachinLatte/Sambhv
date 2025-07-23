@@ -39,7 +39,7 @@ footer {
     }
 
     img {
-      width: 70%;
+      width: 65%;
 
       @include breakpoints(1470px) {
         width: 50%;
@@ -209,7 +209,10 @@ footer {
         margin-left: 5px;
         transition: all 0.5s ease;
       }
-
+      &:hover a {
+        color: $primary-color !important;
+        text-decoration: underline;
+      }
       a {
         color: $white-color !important;
         @include common-para;

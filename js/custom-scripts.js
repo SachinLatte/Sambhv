@@ -72,3 +72,12 @@ const lenis = new Lenis({
 AOS.init({
   once: true
 });
+
+//Navigation Script
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 250) {
+    $('header').addClass('set-top');
+  } else {
+    $('header').removeClass('set-top');
+  }
+});

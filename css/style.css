@@ -28,9 +28,9 @@ li {
 header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7490196078);
-  height: 80px;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 nav {
@@ -40,12 +40,17 @@ nav {
 .navbar {
   padding: 0;
 }
+.navbar .navbar-brand {
+  position: absolute;
+  top: -25px;
+  transition: all 0.5s ease;
+}
 .navbar .navbar-brand img {
   width: 65%;
 }
 
 .nav-link {
-  padding: 1.7rem 0.5rem;
+  padding: 1.1rem 0.5rem;
   color: #fff;
   transition: all 0.5s ease;
 }
@@ -78,7 +83,7 @@ nav {
   float: left;
 }
 .desktop-tabs .tab-content img {
-  width: 100%;
+  width: 100% !important;
 }
 .desktop-tabs .tab-content span {
   font-size: 14px;
@@ -98,12 +103,10 @@ nav {
   color: #fff;
   outline: none;
   text-align: left;
+  border-radius: 5px !important;
 }
 .desktop-tabs .nav-link.active {
   background-color: #fff;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-radius: 5px;
   border: none;
 }
 .desktop-tabs .nav-item {
@@ -172,7 +175,7 @@ nav {
 .mega-menu {
   position: absolute;
   left: 0;
-  top: 101%;
+  top: 100%;
   width: 100%;
   background: #000000;
   padding: 20px;
@@ -328,6 +331,30 @@ nav {
   margin: 0 10px;
 }
 
+.set-top {
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease;
+  background-color: #000000;
+  height: 80px;
+  z-index: 11111111;
+}
+.set-top .navbar-light .navbar-nav .nav-link {
+  color: #f3951a;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.set-top .navbar .navbar-brand {
+  position: static;
+  transition: all 0.5s ease;
+}
+.set-top .navbar .nav-btn-secondary {
+  background-color: #f3951a;
+}
+.set-top .navbar img {
+  width: 60%;
+}
+
 footer {
   width: 100%;
   background-color: #000000;
@@ -410,7 +437,7 @@ footer .footer-box h4 {
   }
 }
 footer .footer-box img {
-  width: 70%;
+  width: 65%;
 }
 @media (max-width: 1470px) {
   footer .footer-box img {
@@ -581,6 +608,10 @@ footer .footer-links-box li {
 footer .footer-links-box li:hover {
   margin-left: 5px;
   transition: all 0.5s ease;
+}
+footer .footer-links-box li:hover a {
+  color: #f3951a !important;
+  text-decoration: underline;
 }
 footer .footer-links-box li a {
   color: #fff !important;

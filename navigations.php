@@ -73,7 +73,7 @@
                                             </li>
                                         </ul>
                                         <div class="tab-content">
-                                            <div class="tab-pane fade show active" id="mild-pipes" role="tabpanel">
+                                            <div class="tab-pane fade active show" id="mild-pipes" role="tabpanel">
                                                 <div class="row img-gap">
                                                     <div class="col-md-4">
                                                         <a href="javascript:void(0)">

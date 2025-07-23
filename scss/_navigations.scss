@@ -1,9 +1,9 @@
 header {
   width: 100%;
   background-color: #000000bf;
-  height: 80px;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease;
 }
 nav {
   border-radius: 5px;
@@ -11,13 +11,16 @@ nav {
 .navbar {
   padding: 0;
   .navbar-brand {
+    position: absolute;
+    top: -25px;
+    transition: all 0.5s ease;
     img {
       width: 65%;
     }
   }
 }
 .nav-link {
-  padding: 1.7rem 0.5rem;
+  padding: 1.1rem 0.5rem;
   color: $white-color;
   transition: all 0.5s ease;
   &:hover {
@@ -50,7 +53,7 @@ nav {
   float: left;
   .tab-content {
     img {
-      width: 100%;
+      width: 100% !important;
     }
     span {
       font-size: 14px;
@@ -71,12 +74,10 @@ nav {
     color: $white-color;
     outline: none;
     text-align: left;
+    border-radius: 5px !important;
   }
   .nav-link.active {
     background-color: #fff;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-radius: 5px;
     border: none;
   }
   .nav-item {
@@ -136,7 +137,7 @@ nav {
 .mega-menu {
   position: absolute;
   left: 0;
-  top: 101%;
+  top: 100%;
   width: 100%;
   background: $black-color;
   padding: 20px;
@@ -305,6 +306,42 @@ nav {
         color: $white-color;
         margin: 0 10px;
       }
+    }
+  }
+}
+
+.set-top {
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease;
+  background-color: $black-color;
+  height: 80px;
+  z-index: 11111111;
+  // @include breakpoints(991px) {
+  //   height: auto;
+  // }
+
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
+        color: $primary-color;
+        font-weight: 500;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  .navbar {
+    .navbar-brand {
+      position: static;
+      transition: all 0.5s ease;
+    }
+    .nav-btn-secondary {
+      background-color: $primary-color;
+    }
+
+    img {
+      width: 60%;
     }
   }
 }
