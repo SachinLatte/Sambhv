@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "navigations";
+@import "breakpoints";
+@import "footer";
+@import "homepage";
+
+.custom-container {
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+  @include breakpoints(768px) {
+    width: 90%;
+  }
+}
